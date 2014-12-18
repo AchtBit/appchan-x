@@ -6,7 +6,7 @@ QR.cooldown =
     $.globalEval 'window.dispatchEvent(new CustomEvent("cooldown:timers", {detail: cooldowns}))'
     $.off window, 'cooldown:timers', setTimers
     for type of QR.cooldown.types
-      QR.cooldown.types[type] = +QR.cooldown.types[type]
+      QR.cooldown.types[type] = +QR.cooldown.types[type] + parseInt(Conf['additionalCooldown'])
     key = "cooldown.#{g.BOARD}"
     $.get key, {}, (item) ->
       QR.cooldown.cooldowns = item[key]

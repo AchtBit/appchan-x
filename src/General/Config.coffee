@@ -1135,3 +1135,5 @@ box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
   'theme_sfw':  'Yotsuba B'
   'theme_nsfw': 'Yotsuba'
   mascot : ''
+
+  additionalCooldown: 0
